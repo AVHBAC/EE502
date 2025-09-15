@@ -1,0 +1,6 @@
+*
+!.gitignore
+!extracted_features/
+!extracted_features/**
+!extracted_features_v2/
+!extracted_features_v2/**

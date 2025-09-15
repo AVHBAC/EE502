@@ -1,0 +1,56 @@
+to_beat 
+    use default params
+
+linear
+    uses default params but linear kernel
+
+poly_5 
+    uses poly kernel with degree 5
+
+poly_15
+    uses poly kernel with degree 15
+
+poly_3
+    uses poly kernel with degree 3
+
+rbf_auto
+    uses rbf kernel with gamma auto
+
+sigmoid 
+    uses sigmoid kernel function
+
+rbf_C09
+    rbf kernel function with C=0.9
+
+rbf_C11
+    rbf kernel function with C=1.1
+
+rbf_C2
+    rbf kernel function with C=2
+
+rbf_C25
+    rbf kernel function with C=2.5
+
+rbf_C25_auto
+    rbf kernel function with C=2.5 gamma is auto
+
+rbf_C05
+    rbf kernel function with C=0.5
+
+rbf_C05_auto
+    rbf kernel function with C=0.5 gamma is auto
+
+rbf_gamma01
+    rbf kernel function with gamma = 0.1
+
+rbf_gamma001
+    rbf kernel function with gamma = 0.01
+
+rbf_gamma0001
+    rbf kernel function with gamma = 0.001
+
+rbf_C3_gamma0001
+     rbf kernel function with gamma = 0.001 C=3
+
+rbf_C3_gamma0001
+     rbf kernel function with C=3

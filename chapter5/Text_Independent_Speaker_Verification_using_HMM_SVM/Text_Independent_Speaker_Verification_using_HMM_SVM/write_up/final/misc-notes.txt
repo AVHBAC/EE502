@@ -1,0 +1,30 @@
+f score
+true positive 
+false negative
+
+
+4 or 5 pages 
+
+features
+* fundemental frequency
+* jitter
+
+explain the features and why they were picked
+
+statistical tests 
+* t-test
+* ANOVA
+* Chi-Square
+* Correlation tests
+
+use statistical tests to compare models
+
+use statistical tests to validate features
+    see relationship between variables
+
+    check for highly correlated features and remove those especially for PCA
+
+    ANOVA or t-tests to check if features significantly differ across classes
+
+
+

@@ -1,0 +1,128 @@
+summary: 
+    five num sum accuracy : 0.9331 | 0.9505 | 0.9718 | 0.9829 | 0.9955 | mean: 0.9679
+    five num sum precision: 0.9454 | 0.9658 | 0.9790 | 0.9867 | 0.9951 | mean: 0.9749
+    five num sum recall   : 0.8897 | 0.9398 | 0.9651 | 0.9835 | 0.9961 | mean: 0.9601
+    five num sum F1-score : 0.9297 | 0.9493 | 0.9714 | 0.9828 | 0.9956 | mean: 0.9672
+    five num sum ROC AUC  : 0.9817 | 0.9899 | 0.9950 | 0.9985 | 0.9999 | mean: 0.9940
+
+1069:
+    accuracy: 0.9914
+    precision: 0.9870
+    recall: 0.9959
+    F1-score: 0.9914
+    ROC AUC: 0.9997
+19:
+    accuracy: 0.9955
+    precision: 0.9951
+    recall: 0.9961
+    F1-score: 0.9956
+    ROC AUC: 0.9999
+201:
+    accuracy: 0.9442
+    precision: 0.9465
+    recall: 0.9403
+    F1-score: 0.9432
+    ROC AUC: 0.9844
+250:
+    accuracy: 0.9784
+    precision: 0.9856
+    recall: 0.9709
+    F1-score: 0.9782
+    ROC AUC: 0.9979
+254:
+    accuracy: 0.9617
+    precision: 0.9664
+    recall: 0.9562
+    F1-score: 0.9612
+    ROC AUC: 0.9940
+26:
+    accuracy: 0.9718
+    precision: 0.9774
+    recall: 0.9656
+    F1-score: 0.9714
+    ROC AUC: 0.9948
+27:
+    accuracy: 0.9412
+    precision: 0.9579
+    recall: 0.9218
+    F1-score: 0.9394
+    ROC AUC: 0.9857
+289:
+    accuracy: 0.9889
+    precision: 0.9897
+    recall: 0.9880
+    F1-score: 0.9888
+    ROC AUC: 0.9994
+298:
+    accuracy: 0.9718
+    precision: 0.9741
+    recall: 0.9692
+    F1-score: 0.9715
+    ROC AUC: 0.9949
+311:
+    accuracy: 0.9517
+    precision: 0.9668
+    recall: 0.9350
+    F1-score: 0.9504
+    ROC AUC: 0.9895
+32:
+    accuracy: 0.9467
+    precision: 0.9536
+    recall: 0.9383
+    F1-score: 0.9459
+    ROC AUC: 0.9901
+3240:
+    accuracy: 0.9769
+    precision: 0.9887
+    recall: 0.9647
+    F1-score: 0.9765
+    ROC AUC: 0.9974
+39:
+    accuracy: 0.9578
+    precision: 0.9639
+    recall: 0.9507
+    F1-score: 0.9571
+    ROC AUC: 0.9931
+40:
+    accuracy: 0.9819
+    precision: 0.9806
+    recall: 0.9829
+    F1-score: 0.9817
+    ROC AUC: 0.9984
+4297:
+    accuracy: 0.9401
+    precision: 0.9454
+    recall: 0.9338
+    F1-score: 0.9394
+    ROC AUC: 0.9885
+60:
+    accuracy: 0.9658
+    precision: 0.9820
+    recall: 0.9481
+    F1-score: 0.9647
+    ROC AUC: 0.9950
+78:
+    accuracy: 0.9331
+    precision: 0.9740
+    recall: 0.8897
+    F1-score: 0.9297
+    ROC AUC: 0.9817
+7800:
+    accuracy: 0.9914
+    precision: 0.9942
+    recall: 0.9887
+    F1-score: 0.9914
+    ROC AUC: 0.9996
+83:
+    accuracy: 0.9814
+    precision: 0.9826
+    recall: 0.9801
+    F1-score: 0.9813
+    ROC AUC: 0.9987
+87:
+    accuracy: 0.9859
+    precision: 0.9867
+    recall: 0.9851
+    F1-score: 0.9858
+    ROC AUC: 0.9976
+

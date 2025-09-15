@@ -1,0 +1,12 @@
+SVM SPEAKER CLASSIFICATION PERFORMANCE COMPARISON REPORT
+================================================================================
+
+Performance Summary:
+ Speakers  Train Samples  Test Samples Test Accuracy   CV Accuracy Training Time (s) Feature Extraction Time (s) Prediction Time (s)
+        5             40            10         1.000 0.725 ± 0.094              0.00                        2.46              0.0002
+       10             80            20         0.600 0.263 ± 0.145              0.00                        4.94              0.0002
+       20            160            40         0.425 0.188 ± 0.068              0.00                        9.71              0.0004
+
+Accuracy Analysis:
+5→10 speakers accuracy drop: 40.0%
+5→20 speakers accuracy drop: 57.5%

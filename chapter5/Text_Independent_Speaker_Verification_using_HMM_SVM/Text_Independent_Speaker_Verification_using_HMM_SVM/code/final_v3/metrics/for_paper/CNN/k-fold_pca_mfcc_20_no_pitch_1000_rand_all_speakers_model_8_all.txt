@@ -1,0 +1,2216 @@
+summary: 
+    five num sum accuracy : 0.9942 | 0.9999 | 1.0000 | 1.0000 | 1.0000 | mean: 0.9999
+    five num sum precision: 0.9934 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | mean: 0.9998
+    five num sum recall   : 0.9928 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | mean: 0.9999
+    five num sum F1-score : 0.6622 | 0.8040 | 0.8513 | 0.8848 | 0.9288 | mean: 0.8395
+    five num sum ROC AUC  : 0.9989 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | mean: 1.0000
+    five num sum MSE      : 0.0000 | 0.0000 | 0.0000 | 0.0001 | 0.0051 | mean: 0.0001
+    five num sum EER      : 0.0000 | 0.0030 | 0.0046 | 0.0086 | 0.0521 | mean: 0.0074
+    five num sum MCC      : 0.9000 | 0.9818 | 0.9899 | 0.9930 | 0.9990 | mean: 0.9846
+
+103:
+    accuracy: 0.9991
+    precision: 0.9992
+    recall: 0.9990
+    F1-score: 0.6622
+    ROC AUC: 1.0000
+    MSE: 0.0009
+    EER: 0.0141
+    MCC: 0.9737
+1034:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7035
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0136
+    MCC: 0.9717
+1069:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.6988
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9970
+1081:
+    accuracy: 0.9995
+    precision: 0.9997
+    recall: 0.9992
+    F1-score: 0.6934
+    ROC AUC: 1.0000
+    MSE: 0.0006
+    EER: 0.0146
+    MCC: 0.9708
+1088:
+    accuracy: 0.9995
+    precision: 1.0000
+    recall: 0.9990
+    F1-score: 0.6664
+    ROC AUC: 1.0000
+    MSE: 0.0006
+    EER: 0.0187
+    MCC: 0.9607
+1098:
+    accuracy: 0.9997
+    precision: 0.9997
+    recall: 0.9997
+    F1-score: 0.6878
+    ROC AUC: 1.0000
+    MSE: 0.0002
+    EER: 0.0187
+    MCC: 0.9627
+1116:
+    accuracy: 0.9972
+    precision: 0.9977
+    recall: 0.9967
+    F1-score: 0.6998
+    ROC AUC: 0.9999
+    MSE: 0.0021
+    EER: 0.0090
+    MCC: 0.9688
+118:
+    accuracy: 0.9942
+    precision: 0.9934
+    recall: 0.9949
+    F1-score: 0.7056
+    ROC AUC: 0.9989
+    MSE: 0.0051
+    EER: 0.0430
+    MCC: 0.9151
+1235:
+    accuracy: 0.9981
+    precision: 0.9970
+    recall: 0.9992
+    F1-score: 0.7084
+    ROC AUC: 0.9997
+    MSE: 0.0015
+    EER: 0.0521
+    MCC: 0.9000
+1246:
+    accuracy: 0.9995
+    precision: 0.9992
+    recall: 0.9997
+    F1-score: 0.7437
+    ROC AUC: 1.0000
+    MSE: 0.0007
+    EER: 0.0243
+    MCC: 0.9495
+125:
+    accuracy: 0.9986
+    precision: 0.9980
+    recall: 0.9992
+    F1-score: 0.7191
+    ROC AUC: 0.9999
+    MSE: 0.0013
+    EER: 0.0339
+    MCC: 0.9303
+1263:
+    accuracy: 0.9986
+    precision: 0.9972
+    recall: 1.0000
+    F1-score: 0.7451
+    ROC AUC: 1.0000
+    MSE: 0.0010
+    EER: 0.0237
+    MCC: 0.9525
+1334:
+    accuracy: 0.9997
+    precision: 0.9995
+    recall: 1.0000
+    F1-score: 0.7305
+    ROC AUC: 1.0000
+    MSE: 0.0003
+    EER: 0.0222
+    MCC: 0.9576
+1355:
+    accuracy: 0.9986
+    precision: 0.9987
+    recall: 0.9985
+    F1-score: 0.7359
+    ROC AUC: 1.0000
+    MSE: 0.0011
+    EER: 0.0232
+    MCC: 0.9537
+1363:
+    accuracy: 0.9948
+    precision: 0.9966
+    recall: 0.9928
+    F1-score: 0.7100
+    ROC AUC: 0.9993
+    MSE: 0.0043
+    EER: 0.0424
+    MCC: 0.9171
+1447:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7659
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0167
+    MCC: 0.9646
+1455:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7428
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0263
+    MCC: 0.9440
+150:
+    accuracy: 0.9995
+    precision: 0.9992
+    recall: 0.9997
+    F1-score: 0.7622
+    ROC AUC: 1.0000
+    MSE: 0.0003
+    EER: 0.0243
+    MCC: 0.9545
+1502:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.7173
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0359
+    MCC: 0.9348
+1553:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7267
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0152
+    MCC: 0.9636
+1578:
+    accuracy: 0.9997
+    precision: 0.9995
+    recall: 1.0000
+    F1-score: 0.7513
+    ROC AUC: 1.0000
+    MSE: 0.0003
+    EER: 0.0192
+    MCC: 0.9607
+1594:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.7622
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0258
+    MCC: 0.9496
+1624:
+    accuracy: 0.9997
+    precision: 0.9995
+    recall: 1.0000
+    F1-score: 0.7148
+    ROC AUC: 1.0000
+    MSE: 0.0002
+    EER: 0.0333
+    MCC: 0.9406
+163:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7169
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0202
+    MCC: 0.9568
+1723:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7396
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0111
+    MCC: 0.9768
+1737:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7172
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0066
+    MCC: 0.9829
+1743:
+    accuracy: 0.9996
+    precision: 0.9992
+    recall: 1.0000
+    F1-score: 0.7561
+    ROC AUC: 1.0000
+    MSE: 0.0004
+    EER: 0.0263
+    MCC: 0.9477
+1841:
+    accuracy: 0.9992
+    precision: 0.9985
+    recall: 1.0000
+    F1-score: 0.7678
+    ROC AUC: 1.0000
+    MSE: 0.0006
+    EER: 0.0242
+    MCC: 0.9496
+1867:
+    accuracy: 0.9997
+    precision: 0.9995
+    recall: 1.0000
+    F1-score: 0.7807
+    ROC AUC: 1.0000
+    MSE: 0.0002
+    EER: 0.0157
+    MCC: 0.9647
+1898:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7608
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0126
+    MCC: 0.9699
+19:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8040
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0025
+    MCC: 0.9910
+1926:
+    accuracy: 0.9995
+    precision: 0.9990
+    recall: 1.0000
+    F1-score: 0.7764
+    ROC AUC: 1.0000
+    MSE: 0.0003
+    EER: 0.0146
+    MCC: 0.9687
+196:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.7717
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0172
+    MCC: 0.9677
+1963:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7743
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0137
+    MCC: 0.9717
+1970:
+    accuracy: 0.9996
+    precision: 0.9992
+    recall: 1.0000
+    F1-score: 0.7593
+    ROC AUC: 1.0000
+    MSE: 0.0002
+    EER: 0.0167
+    MCC: 0.9658
+198:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7556
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0111
+    MCC: 0.9768
+200:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8294
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0096
+    MCC: 0.9798
+2002:
+    accuracy: 0.9999
+    precision: 1.0000
+    recall: 0.9997
+    F1-score: 0.7785
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0202
+    MCC: 0.9652
+2007:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7930
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0152
+    MCC: 0.9698
+201:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7904
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0146
+    MCC: 0.9678
+2092:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7924
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0126
+    MCC: 0.9747
+211:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7934
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0081
+    MCC: 0.9808
+2136:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7742
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0146
+    MCC: 0.9668
+2159:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7649
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0156
+    MCC: 0.9734
+2182:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.7725
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0157
+    MCC: 0.9687
+2196:
+    accuracy: 0.9999
+    precision: 1.0000
+    recall: 0.9997
+    F1-score: 0.7858
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0106
+    MCC: 0.9778
+226:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7927
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0071
+    MCC: 0.9859
+2289:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7931
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0137
+    MCC: 0.9687
+229:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7922
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0111
+    MCC: 0.9778
+233:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8091
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0076
+    MCC: 0.9818
+2384:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7966
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0066
+    MCC: 0.9869
+2391:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7739
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0141
+    MCC: 0.9657
+2416:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7943
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0086
+    MCC: 0.9828
+2436:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7618
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0136
+    MCC: 0.9717
+248:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7947
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9899
+250:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8434
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0126
+    MCC: 0.9707
+2514:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8150
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0151
+    MCC: 0.9732
+2518:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7779
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0101
+    MCC: 0.9739
+254:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7941
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0091
+    MCC: 0.9788
+26:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7930
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0101
+    MCC: 0.9808
+2691:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8087
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0076
+    MCC: 0.9820
+27:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7946
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0101
+    MCC: 0.9808
+2764:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8257
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0055
+    MCC: 0.9862
+2817:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7855
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0050
+    MCC: 0.9889
+2836:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8044
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9880
+2843:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8266
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0076
+    MCC: 0.9838
+289:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8378
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0010
+    MCC: 0.9970
+2893:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7956
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0111
+    MCC: 0.9718
+2910:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8869
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0035
+    MCC: 0.9929
+2911:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8387
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0086
+    MCC: 0.9778
+2952:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8400
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0111
+    MCC: 0.9798
+298:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8542
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9930
+2989:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8763
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0056
+    MCC: 0.9879
+302:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8320
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0081
+    MCC: 0.9819
+307:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8112
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0111
+    MCC: 0.9778
+311:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8051
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0035
+    MCC: 0.9930
+3112:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8051
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0106
+    MCC: 0.9820
+3168:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8419
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0061
+    MCC: 0.9920
+32:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8283
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9920
+3214:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8523
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0035
+    MCC: 0.9950
+322:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8161
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0045
+    MCC: 0.9899
+3235:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8333
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0056
+    MCC: 0.9869
+3240:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.7962
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0055
+    MCC: 0.9869
+3242:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8003
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0111
+    MCC: 0.9779
+3259:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8013
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0091
+    MCC: 0.9799
+328:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8079
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9950
+332:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8783
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0010
+    MCC: 0.9980
+3374:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8102
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9899
+3436:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8126
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0111
+    MCC: 0.9758
+3440:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8313
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0045
+    MCC: 0.9919
+3486:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8454
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0081
+    MCC: 0.9859
+3526:
+    accuracy: 0.9995
+    precision: 0.9990
+    recall: 1.0000
+    F1-score: 0.8481
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0076
+    MCC: 0.9879
+3607:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8466
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0051
+    MCC: 0.9889
+3664:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8079
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0071
+    MCC: 0.9839
+3699:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8366
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9950
+3723:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8552
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9919
+374:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8531
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9920
+3807:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8459
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9960
+3830:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8502
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0035
+    MCC: 0.9919
+3857:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8367
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0066
+    MCC: 0.9889
+3879:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8879
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0025
+    MCC: 0.9909
+39:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8570
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0046
+    MCC: 0.9950
+3947:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8678
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0075
+    MCC: 0.9869
+3982:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.8395
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0066
+    MCC: 0.9919
+3983:
+    accuracy: 0.9999
+    precision: 1.0000
+    recall: 0.9997
+    F1-score: 0.8391
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0076
+    MCC: 0.9799
+40:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8744
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0035
+    MCC: 0.9929
+4014:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8599
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0035
+    MCC: 0.9929
+4018:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8404
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0025
+    MCC: 0.9929
+403:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8471
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9929
+405:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8093
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0035
+    MCC: 0.9900
+4051:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8261
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9960
+4088:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8236
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0015
+    MCC: 0.9990
+412:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8430
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0035
+    MCC: 0.9890
+4137:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8043
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0071
+    MCC: 0.9838
+4160:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8390
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9929
+4195:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8653
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0086
+    MCC: 0.9890
+4214:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8959
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0025
+    MCC: 0.9950
+426:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8310
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9929
+4267:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8518
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9929
+4297:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8509
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0025
+    MCC: 0.9950
+4340:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8423
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0051
+    MCC: 0.9929
+4362:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8263
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0035
+    MCC: 0.9939
+4397:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8741
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0066
+    MCC: 0.9869
+4406:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8514
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9929
+441:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8707
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9950
+4441:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8753
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9940
+446:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8366
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0056
+    MCC: 0.9889
+4481:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8659
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9929
+458:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8391
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9930
+460:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8274
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0010
+    MCC: 0.9980
+4640:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.8259
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0081
+    MCC: 0.9859
+4680:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8456
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0045
+    MCC: 0.9900
+4788:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8602
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0055
+    MCC: 0.9879
+481:
+    accuracy: 0.9995
+    precision: 1.0000
+    recall: 0.9990
+    F1-score: 0.8433
+    ROC AUC: 1.0000
+    MSE: 0.0003
+    EER: 0.0055
+    MCC: 0.9899
+4813:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9008
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9919
+4830:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8703
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9930
+4853:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8568
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0035
+    MCC: 0.9919
+4859:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8837
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0051
+    MCC: 0.9919
+4898:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8392
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9910
+5022:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.8568
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9919
+5049:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8926
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0041
+    MCC: 0.9960
+5104:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8658
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9939
+5163:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8382
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9929
+5192:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8746
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9929
+5322:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8989
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9949
+5339:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8828
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0061
+    MCC: 0.9879
+5390:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8745
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9929
+5393:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8570
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9899
+5456:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9043
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0051
+    MCC: 0.9869
+5463:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9191
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0010
+    MCC: 0.9950
+5514:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8654
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9929
+5561:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8562
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0050
+    MCC: 0.9869
+5652:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8690
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0071
+    MCC: 0.9870
+5678:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8506
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0081
+    MCC: 0.9818
+5688:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8537
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9889
+5703:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8716
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0035
+    MCC: 0.9929
+5750:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8574
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9889
+5778:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8915
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0055
+    MCC: 0.9899
+5789:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8513
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0051
+    MCC: 0.9889
+5808:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8451
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0010
+    MCC: 0.9960
+5867:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8292
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9960
+587:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8472
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9899
+60:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8753
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0035
+    MCC: 0.9920
+6000:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8687
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0127
+    MCC: 0.9851
+6019:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8610
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0010
+    MCC: 0.9970
+6064:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.8893
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0055
+    MCC: 0.9899
+6078:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8808
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9899
+6081:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8971
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9930
+6147:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8693
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0045
+    MCC: 0.9910
+6181:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8715
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0025
+    MCC: 0.9950
+6209:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9029
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9939
+625:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9145
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0010
+    MCC: 0.9960
+6272:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8596
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0025
+    MCC: 0.9960
+6367:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8970
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0061
+    MCC: 0.9919
+6385:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8614
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9930
+6415:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8590
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0061
+    MCC: 0.9879
+6437:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8849
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0015
+    MCC: 0.9980
+6454:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8741
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9909
+6476:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8886
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0051
+    MCC: 0.9890
+6529:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8712
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0015
+    MCC: 0.9970
+6531:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8974
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9920
+6563:
+    accuracy: 0.9999
+    precision: 1.0000
+    recall: 0.9997
+    F1-score: 0.8624
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0015
+    MCC: 0.9950
+669:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8887
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0010
+    MCC: 0.9970
+6818:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8842
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0051
+    MCC: 0.9889
+6836:
+    accuracy: 0.9999
+    precision: 1.0000
+    recall: 0.9997
+    F1-score: 0.8663
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0071
+    MCC: 0.9879
+6848:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9039
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0015
+    MCC: 0.9980
+6880:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8914
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0061
+    MCC: 0.9879
+6925:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8875
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0005
+    MCC: 0.9990
+696:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8701
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0061
+    MCC: 0.9881
+7059:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8682
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0040
+    MCC: 0.9940
+7067:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8786
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0045
+    MCC: 0.9889
+7078:
+    accuracy: 0.9997
+    precision: 0.9997
+    recall: 0.9997
+    F1-score: 0.8347
+    ROC AUC: 1.0000
+    MSE: 0.0002
+    EER: 0.0030
+    MCC: 0.9950
+7113:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9153
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0010
+    MCC: 0.9980
+7148:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.8973
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0060
+    MCC: 0.9869
+7178:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8873
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0010
+    MCC: 0.9970
+7190:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8848
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0050
+    MCC: 0.9889
+7226:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8761
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9950
+7264:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8589
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0010
+    MCC: 0.9929
+7278:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9076
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0010
+    MCC: 0.9970
+730:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8818
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0051
+    MCC: 0.9909
+7302:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8826
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0025
+    MCC: 0.9939
+7367:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8683
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9960
+7402:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8797
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0035
+    MCC: 0.9950
+7447:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9060
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9970
+7505:
+    accuracy: 0.9997
+    precision: 0.9995
+    recall: 1.0000
+    F1-score: 0.9162
+    ROC AUC: 1.0000
+    MSE: 0.0002
+    EER: 0.0015
+    MCC: 0.9939
+7511:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9041
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9930
+7517:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8878
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0010
+    MCC: 0.9970
+7635:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8880
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0025
+    MCC: 0.9929
+7780:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8909
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0035
+    MCC: 0.9939
+7794:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9032
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0050
+    MCC: 0.9929
+78:
+    accuracy: 0.9995
+    precision: 1.0000
+    recall: 0.9990
+    F1-score: 0.8416
+    ROC AUC: 1.0000
+    MSE: 0.0004
+    EER: 0.0055
+    MCC: 0.9849
+7800:
+    accuracy: 0.9996
+    precision: 0.9997
+    recall: 0.9995
+    F1-score: 0.8817
+    ROC AUC: 1.0000
+    MSE: 0.0003
+    EER: 0.0055
+    MCC: 0.9869
+7859:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9128
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0000
+    MCC: 0.9970
+8051:
+    accuracy: 0.9995
+    precision: 1.0000
+    recall: 0.9990
+    F1-score: 0.8450
+    ROC AUC: 1.0000
+    MSE: 0.0004
+    EER: 0.0055
+    MCC: 0.9899
+8063:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9105
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0015
+    MCC: 0.9950
+8088:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9039
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9949
+8095:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9078
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9920
+8098:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9042
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0025
+    MCC: 0.9980
+8108:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8857
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9950
+8123:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.8754
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0051
+    MCC: 0.9870
+8226:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.9288
+    ROC AUC: 1.0000
+    MSE: 0.0002
+    EER: 0.0040
+    MCC: 0.9899
+8238:
+    accuracy: 0.9996
+    precision: 0.9992
+    recall: 1.0000
+    F1-score: 0.9056
+    ROC AUC: 1.0000
+    MSE: 0.0003
+    EER: 0.0051
+    MCC: 0.9899
+83:
+    accuracy: 0.9997
+    precision: 0.9995
+    recall: 1.0000
+    F1-score: 0.9072
+    ROC AUC: 1.0000
+    MSE: 0.0002
+    EER: 0.0010
+    MCC: 0.9920
+831:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.9086
+    ROC AUC: 1.0000
+    MSE: 0.0002
+    EER: 0.0010
+    MCC: 0.9949
+8312:
+    accuracy: 0.9996
+    precision: 0.9992
+    recall: 1.0000
+    F1-score: 0.9211
+    ROC AUC: 1.0000
+    MSE: 0.0003
+    EER: 0.0030
+    MCC: 0.9909
+8324:
+    accuracy: 0.9996
+    precision: 0.9992
+    recall: 1.0000
+    F1-score: 0.9048
+    ROC AUC: 1.0000
+    MSE: 0.0004
+    EER: 0.0051
+    MCC: 0.9899
+839:
+    accuracy: 0.9997
+    precision: 0.9995
+    recall: 1.0000
+    F1-score: 0.8886
+    ROC AUC: 1.0000
+    MSE: 0.0002
+    EER: 0.0045
+    MCC: 0.9879
+8419:
+    accuracy: 0.9997
+    precision: 0.9995
+    recall: 1.0000
+    F1-score: 0.8977
+    ROC AUC: 1.0000
+    MSE: 0.0002
+    EER: 0.0081
+    MCC: 0.9818
+8425:
+    accuracy: 0.9996
+    precision: 0.9992
+    recall: 1.0000
+    F1-score: 0.8992
+    ROC AUC: 1.0000
+    MSE: 0.0003
+    EER: 0.0045
+    MCC: 0.9889
+8465:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9208
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9919
+8468:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.9243
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0015
+    MCC: 0.9960
+8580:
+    accuracy: 0.9996
+    precision: 0.9992
+    recall: 1.0000
+    F1-score: 0.9198
+    ROC AUC: 1.0000
+    MSE: 0.0003
+    EER: 0.0070
+    MCC: 0.9869
+8609:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8825
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0035
+    MCC: 0.9909
+8629:
+    accuracy: 0.9997
+    precision: 0.9997
+    recall: 0.9997
+    F1-score: 0.8966
+    ROC AUC: 1.0000
+    MSE: 0.0002
+    EER: 0.0030
+    MCC: 0.9890
+8630:
+    accuracy: 0.9991
+    precision: 0.9990
+    recall: 0.9992
+    F1-score: 0.9113
+    ROC AUC: 1.0000
+    MSE: 0.0006
+    EER: 0.0020
+    MCC: 0.9960
+87:
+    accuracy: 0.9997
+    precision: 0.9995
+    recall: 1.0000
+    F1-score: 0.9081
+    ROC AUC: 1.0000
+    MSE: 0.0002
+    EER: 0.0045
+    MCC: 0.9909
+8747:
+    accuracy: 0.9997
+    precision: 0.9995
+    recall: 1.0000
+    F1-score: 0.9009
+    ROC AUC: 1.0000
+    MSE: 0.0003
+    EER: 0.0096
+    MCC: 0.9828
+8770:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.9132
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0041
+    MCC: 0.9950
+8797:
+    accuracy: 0.9996
+    precision: 0.9992
+    recall: 1.0000
+    F1-score: 0.8881
+    ROC AUC: 1.0000
+    MSE: 0.0003
+    EER: 0.0045
+    MCC: 0.9909
+8838:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9192
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9980
+887:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.8640
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0020
+    MCC: 0.9960
+89:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9056
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0030
+    MCC: 0.9920
+8975:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.9032
+    ROC AUC: 1.0000
+    MSE: 0.0002
+    EER: 0.0035
+    MCC: 0.9881
+909:
+    accuracy: 1.0000
+    precision: 1.0000
+    recall: 1.0000
+    F1-score: 0.9276
+    ROC AUC: 1.0000
+    MSE: 0.0000
+    EER: 0.0035
+    MCC: 0.9889
+911:
+    accuracy: 0.9999
+    precision: 0.9997
+    recall: 1.0000
+    F1-score: 0.9136
+    ROC AUC: 1.0000
+    MSE: 0.0001
+    EER: 0.0081
+    MCC: 0.9910
+

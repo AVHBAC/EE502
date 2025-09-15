@@ -1,0 +1,3 @@
+This paper says that DMFCC works well https://arxiv.org/pdf/0705.1585
+
+This paper compares a bunch of different features.  https://arxiv.org/pdf/1707.04373 
