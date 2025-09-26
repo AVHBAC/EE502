@@ -52,3 +52,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Old/redundant folders
+text_independant_Spkr_vrf_old_chapter5/
