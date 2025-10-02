@@ -1,0 +1,16 @@
+Parameter,Value,Description
+Algorithm,Support Vector Machine (SVM),Supervised learning for classification
+Kernel Type,RBF (Radial Basis Function),Handles non-linear relationships effectively
+Decision Function,One-vs-Rest (OvR),Multi-class classification strategy
+Feature Extraction,MFCC (Mel-Frequency Cepstral Coefficients),Captures spectral properties of speech
+MFCC Coefficients,3,Number of cepstral coefficients extracted
+Sample Rate (Hz),48000,Audio sampling frequency
+FFT Window (n_fft),960,FFT window size for MFCC calculation
+Hop Length,480,Step size between MFCC windows
+Noise Reduction,Yes (noisereduce library),Reduces background noise in audio
+Noise Threshold,0.8 (prop_decrease),Proportion of noise to reduce
+Statistical Features,"Mean, Median, Std, Skew, Kurtosis, Max, Min",Global statistics computed per audio file
+Total Features per Sample,21 (3 MFCCs × 7 statistics),Feature vector dimensionality
+Feature Normalization,"StandardScaler (zero mean, unit variance)",Preprocessing for SVM optimization
+Cross-Validation Folds,5-Fold,Cross-validation strategy
+Train/Test Split,80% / 20%,Dataset split ratio

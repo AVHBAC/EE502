@@ -1,0 +1,7 @@
+Speaker ID,Training Files,Testing Files,Total Files,Train/Test Split,Avg File Size (KB),Duration per File (s)
+speaker_0000,8,2,10,80/20,282,~5.9
+speaker_0001,8,2,10,80/20,282,~5.9
+speaker_0002,8,2,10,80/20,282,~5.9
+speaker_0003,8,2,10,80/20,282,~5.9
+speaker_0004,8,2,10,80/20,282,~5.9
+TOTAL,40,10,50,80/20,282,~5.9

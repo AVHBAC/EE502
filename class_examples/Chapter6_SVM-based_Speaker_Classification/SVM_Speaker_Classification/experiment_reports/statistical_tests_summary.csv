@@ -1,0 +1,6 @@
+Test Name,Purpose,Result (5 Speakers),Interpretation,Statistical Significance
+ANOVA F-Test,Feature importance ranking,"Top features: 18, 7, 6, 2, 8",MFCC-3 Kurtosis most discriminative,High (low p-values expected)
+Chi-Squared Test,Model vs random classification,"χ² = 40.0, p = 0.00078","Highly significant, non-random",Yes (p < 0.001)
+T-Test (vs baseline),Performance vs chance (0.5),p = 0.106 (not significant),Better than baseline but inconclusive,No (p > 0.05)
+K-Fold Cross-Validation,Model generalization assessment,"Mean: 68%, Std: 10%","Moderate generalization, some overfitting",N/A
+Confusion Matrix Analysis,Per-class performance analysis,"100% accuracy, perfect diagonal","Perfect test performance, all classes",N/A

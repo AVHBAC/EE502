@@ -1,0 +1,4 @@
+Experiment,Training Samples,Testing Samples,Test Accuracy,CV Accuracy (Mean),CV Std Dev,Training Time (s),Feature Extraction Time (s),Prediction Time (s)
+5 Speakers,40,10,1.0,0.725,0.094,0.0,2.46,0.0002
+10 Speakers,80,20,0.6,0.263,0.145,0.0,4.94,0.0002
+20 Speakers,160,40,0.425,0.188,0.068,0.0,9.71,0.0004

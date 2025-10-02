@@ -1,0 +1,22 @@
+Index,MFCC Coefficient,Statistic,Description,Feature Type
+0,1,Mean,Average of MFCC-1 over time,Temporal
+1,1,Median,Median value of MFCC-1,Temporal
+2,1,Std Dev,Variability of MFCC-1,Temporal
+3,1,Skewness,Asymmetry of MFCC-1 distribution,Temporal
+4,1,Kurtosis,Tailedness of MFCC-1 distribution,Temporal
+5,1,Maximum,Peak value of MFCC-1,Temporal
+6,1,Minimum,Minimum value of MFCC-1,Temporal
+7,2,Mean,Average of MFCC-2 over time,Temporal
+8,2,Median,Median value of MFCC-2,Temporal
+9,2,Std Dev,Variability of MFCC-2,Temporal
+10,2,Skewness,Asymmetry of MFCC-2 distribution,Temporal
+11,2,Kurtosis,Tailedness of MFCC-2 distribution,Temporal
+12,2,Maximum,Peak value of MFCC-2,Temporal
+13,2,Minimum,Minimum value of MFCC-2,Temporal
+14,3,Mean,Average of MFCC-3 over time,Temporal
+15,3,Median,Median value of MFCC-3,Temporal
+16,3,Std Dev,Variability of MFCC-3,Temporal
+17,3,Skewness,Asymmetry of MFCC-3 distribution,Temporal
+18,3,Kurtosis,Tailedness of MFCC-3 distribution,Temporal
+19,3,Maximum,Peak value of MFCC-3,Temporal
+20,3,Minimum,Minimum value of MFCC-3,Temporal
