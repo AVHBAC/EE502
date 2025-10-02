@@ -106,7 +106,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Project specific
+# Project specific - dataset and generated files
 dataset/
 *.h5
 *.pkl
@@ -124,6 +124,34 @@ IMPROVEMENT_REPORT.txt
 # Large data files (>100MB)
 features.csv
 features_backup.csv
+data_path.csv
+
+# Generated/Auxiliary scripts (not core functionality)
+generate_synthetic_features.py
+run_experiment.py
+pdf_analysis_and_visualization.py
+RUN_EXPERIMENT.sh
+setup.py
+
+# Documentation (keep only README.md and EXPERIMENT_RESULTS.md)
+PROJECT_SUMMARY.md
+EXECUTION_ORDER_GUIDE.md
+CONTRIBUTING.md
+DATA_GENERATION_NOTE.md
+LICENSE
+
+# PDF and analysis outputs
+*.pdf
+pdf_analysis_output/
+chapter_8_overleaf/
+
+# Backup notebooks
+*_BACKUP.ipynb
+*_backup.*
+*DL_BACKUP*
+
+# IDE and temp files
+.claude/
 
 # OS specific
 .DS_Store

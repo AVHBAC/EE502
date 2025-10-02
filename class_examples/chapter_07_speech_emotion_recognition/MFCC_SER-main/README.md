@@ -1,11 +1,11 @@
-# 🎵 Advanced Speech Emotion Recognition (SER) with MFCC Features
+# 🎵 Speech Emotion Recognition (SER) with Traditional Machine Learning
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.10%2B-orange.svg)](https://tensorflow.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0%2B-orange.svg)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-> **A comprehensive implementation of advanced speech emotion recognition using MFCC features with state-of-the-art optimization techniques achieving 85%+ accuracy.**
+> **Speech emotion recognition using MFCC features with traditional machine learning approaches achieving up to 79% accuracy.**
 
 ## 📋 Table of Contents
 
@@ -25,13 +25,14 @@
 
 ## 🎯 Overview
 
-This repository implements an advanced Speech Emotion Recognition (SER) system that classifies emotions from audio signals using Mel-Frequency Cepstral Coefficients (MFCC) features. The system employs cutting-edge machine learning techniques including:
+This repository implements a Speech Emotion Recognition (SER) system that classifies emotions from audio signals using Mel-Frequency Cepstral Coefficients (MFCC) features. The system employs **traditional machine learning** techniques only:
 
-- **Advanced Data Augmentation** with 10+ audio processing techniques
-- **Hyperparameter Optimization** using Optuna's TPE algorithm  
-- **State-of-the-art Architectures** (ResNet-1D, Attention, Transformers)
-- **Ensemble Learning** methods for robust performance
-- **Advanced Training Techniques** (MixUp, Label Smoothing, AdamW)
+- **Random Forest Classifier** - Best performer at 79% accuracy
+- **Support Vector Machine (SVM)** - 76% accuracy
+- **K-Nearest Neighbors (KNN)** - 74% accuracy
+- **Logistic Regression** - 74% accuracy
+- **Audio Feature Extraction** - MFCC, ZCR, Chroma, RMS, Mel Spectrogram
+- **Simple Data Augmentation** - Noise injection, time stretching
 
 ### 🎪 Supported Emotions
 - 😠 **Angry**
@@ -47,37 +48,63 @@ This repository implements an advanced Speech Emotion Recognition (SER) system t
 
 ### 🔥 Core Capabilities
 - **Multi-dataset Support**: RAVDESS, CREMA-D, TESS, SAVEE
-- **Advanced Feature Extraction**: 157 optimized audio features
-- **Automated Hyperparameter Tuning**: Optuna-powered optimization
-- **Multiple Architectures**: Traditional ML + Deep Learning models
-- **Comprehensive Evaluation**: Cross-validation, confusion matrices, reports
-- **Production Ready**: Saved models, inference pipelines, monitoring
+- **Comprehensive Feature Extraction**: 162 audio features (ZCR + Chroma + MFCC + RMS + Mel)
+- **Traditional ML Models**: Random Forest, SVM, KNN, Logistic Regression
+- **Complete Evaluation**: Confusion matrices, classification reports, accuracy metrics
+- **Production Ready**: Model persistence with joblib, easy deployment
 
-### 🚀 Advanced Techniques
-- **Data Augmentation**: Noise injection, time/pitch manipulation, spectral augmentation
-- **Neural Architectures**: CNN, ResNet-1D, Attention mechanisms, Transformers
-- **Regularization**: Dropout, BatchNorm, Weight decay, Label smoothing
-- **Optimization**: AdamW, Learning rate scheduling, Gradient clipping
-- **Ensemble Methods**: Stacking, Weighted averaging, Cross-validation
+### 🎯 Implementation Highlights
+- **Feature Engineering**: 20 MFCCs, Zero Crossing Rate, Chroma features, RMS, Mel Spectrogram
+- **Data Augmentation**: Simple noise injection and time stretching
+- **Interpretability**: Feature importance analysis with Random Forest
+- **Fast Training**: Efficient scikit-learn implementations
+- **Low Resource Requirements**: Suitable for edge devices and embedded systems
+- **Traditional ML Only**: No neural networks or deep learning methods
+
+### 🎙️ Audio Preprocessing Details
+
+**Parameters**:
+- Sample Rate: 22,050 Hz
+- Duration: 2.5 seconds per clip
+- Offset: 0.6 seconds (skips initial silence/artifacts)
+
+**Why We Don't Use Energy-Based Silence Trimming**:
+
+Unlike some audio processing pipelines, this project **intentionally preserves silence** in audio clips for several important reasons:
+
+1. **Emotional Information in Silence**: Pauses and silence patterns carry significant emotional meaning:
+   - Hesitation and pauses in **fear** and **sad** emotions
+   - Brief pauses for emphasis in **angry** speech
+   - Calm emotions naturally have more quiet moments
+
+2. **Consistent Feature Dimensions**: Fixed 2.5-second duration ensures:
+   - All samples produce exactly 162 features
+   - Uniform input dimensions for ML models
+   - Simplified batch processing
+
+3. **Dataset Quality**: Professional emotion datasets (RAVDESS, CREMA-D, TESS, SAVEE) are studio-recorded with minimal non-speech silence, making aggressive trimming unnecessary
+
+4. **Simplicity**: Focusing on core ML classification rather than complex audio preprocessing techniques
+
+**See EXPERIMENT_RESULTS.md for more details on preprocessing decisions.**
 
 ## 📊 Performance
 
-| Model Type | Baseline | Enhanced | Improvement |
-|------------|----------|----------|-------------|
-| **Random Forest** | 70.05% | 72.50% | +2.45pp |
-| **Logistic Regression** | 43.19% | **74.17%** | +30.98pp |
-| **Neural Network** | ~65% | 69.17% | +4.17pp |
-| **Advanced CNN** | ~70% | **78-85%** | +8-15pp |
+| Model | Accuracy | Precision | Recall | F1-Score |
+|-------|----------|-----------|--------|----------|
+| **Random Forest** | **79%** | 81% | 78% | 79% |
+| **SVM** | **76%** | 77% | 75% | 76% |
+| **KNN** | **74%** | 75% | 74% | 74% |
+| **Logistic Regression** | **74%** | 74% | 74% | 74% |
 
-**🎯 Best Performance**: **85%+ accuracy** with optimized ensemble methods
+**🎯 Best Model**: **Random Forest at 79% accuracy**
 
 ## 🛠️ Installation
 
 ### Prerequisites
 - **Python**: 3.8+ (3.11 recommended)
-- **RAM**: 8GB minimum, 16GB recommended  
-- **Storage**: 10GB free space
-- **GPU**: Optional but recommended (CUDA-compatible)
+- **RAM**: 4GB minimum, 8GB recommended
+- **Storage**: 5GB free space
 
 ### 1. Clone Repository
 ```bash
@@ -99,16 +126,13 @@ source ser_env/bin/activate  # Linux/Mac
 
 ### 3. Install Dependencies
 ```bash
-# Core dependencies
+# Install core dependencies
 pip install -r requirements.txt
-
-# Additional optimization packages
-pip install optuna optuna-integration[keras] plotly scikit-optimize
 ```
 
 ### 4. Verify Installation
 ```bash
-python -c "import tensorflow as tf; import optuna; import librosa; print('✅ All packages installed successfully')"
+python -c "import sklearn; import librosa; import pandas; print('✅ All packages installed successfully')"
 ```
 
 ## 📁 Dataset Setup
@@ -183,147 +207,125 @@ python -c "import os; print('✅ Dataset found' if os.path.exists('dataset') els
 
 ## 🚀 Quick Start
 
-### 1. Automated Full Experiment (Recommended)
+### 1. Run Jupyter Notebook (Recommended)
 ```bash
-# Run complete optimization pipeline (12-16 hours)
-./RUN_EXPERIMENT.sh
+# Interactive notebook with all steps
+jupyter notebook Speech_Emotion_Recognition_ML.ipynb
 ```
 
-### 2. Quick Test (30 minutes)
+### 2. Run Baseline Comparison Script
 ```bash
-# Test with sample data
-python quick_test.py
-```
-
-### 3. Step-by-Step Manual Execution
-```bash
-# Step 1: Create baseline
-python original_test.py
-
-# Step 2: Generate enhanced features (2-4 hours) 
-python advanced_data_augmentation.py
-
-# Step 3: Optimize hyperparameters (2-3 hours)
-python optuna_hyperparameter_tuning.py
-
-# Step 4: Train advanced models (4-6 hours)
-python advanced_models.py
-
-# Step 5: Apply advanced techniques (2-3 hours)
-python advanced_training_techniques.py
-
-# Step 6: Generate results
-python final_results_summary.py
+# Automated ML comparison (5-10 minutes)
+python baseline_comparison.py
 ```
 
 ## 🔧 Advanced Usage
 
 ### Custom Model Training
 ```python
-from advanced_models import AdvancedModelArchitectures
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
+import joblib
 
-# Create custom architecture
-arch = AdvancedModelArchitectures(input_shape=(157, 1), num_classes=8)
-model = arch.create_attention_cnn(filters=[256, 512], dropout_rate=0.3)
+# Train custom Random Forest
+rf_model = RandomForestClassifier(
+    n_estimators=200,
+    max_depth=30,
+    min_samples_split=5,
+    random_state=42
+)
+rf_model.fit(X_train, y_train)
 
-# Train with custom parameters
-model.compile(optimizer='adamw', loss='categorical_crossentropy')
-history = model.fit(X_train, y_train, epochs=100, validation_data=(X_val, y_val))
+# Save model
+joblib.dump(rf_model, 'custom_rf_model.pkl')
 ```
 
-### Hyperparameter Optimization
+### Feature Extraction
 ```python
-from optuna_hyperparameter_tuning import OptunaHyperparameterTuner
+import librosa
+import numpy as np
 
-# Custom optimization
-tuner = OptunaHyperparameterTuner("enhanced_features.csv")
-study = tuner.optimize(n_trials=50, timeout=3600)
-best_params = study.best_params
+def extract_features(audio_path):
+    # Load audio
+    y, sr = librosa.load(audio_path, sr=22050, duration=2.5, offset=0.6)
+
+    # Extract MFCC
+    mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=20)
+    mfcc = np.mean(mfcc.T, axis=0)
+
+    # Extract other features
+    zcr = np.mean(librosa.feature.zero_crossing_rate(y))
+    chroma = np.mean(librosa.feature.chroma_stft(y=y, sr=sr).T, axis=0)
+    rms = np.mean(librosa.feature.rms(y=y))
+
+    return np.concatenate([mfcc, [zcr], chroma, [rms]])
 ```
 
 ### Data Augmentation
 ```python
-from advanced_data_augmentation import EnhancedFeatureExtractor
+import librosa
+import numpy as np
 
-# Custom augmentation
-extractor = EnhancedFeatureExtractor(sample_rate=22050)
-augmented_features = extractor.get_augmented_features(
-    audio_path="path/to/audio.wav", 
-    augmentation_factor=5
-)
-```
+# Add noise
+def add_noise(data, noise_factor=0.005):
+    noise = np.random.randn(len(data))
+    return data + noise_factor * noise
 
-### Ensemble Predictions
-```python
-from advanced_models import EnsembleModels
-
-# Create ensemble
-ensemble = EnsembleModels(input_shape=(157, 1), num_classes=8)
-base_models = ensemble.create_diverse_models()
-
-# Weighted prediction
-predictions = ensemble.weighted_average_ensemble(base_models, X_test)
+# Time stretching
+def time_stretch(data, stretch_rate=0.8):
+    return librosa.effects.time_stretch(data, rate=stretch_rate)
 ```
 
 ## 📈 Experiment Results
 
 ### Performance Metrics
 ```
-Original Baseline:     70.05% accuracy
-Enhanced Features:     74.17% accuracy  
-Advanced CNN:          78-85% accuracy
-Ensemble Methods:      85%+ accuracy
+Random Forest:           79% accuracy
+SVM:                     76% accuracy
+KNN:                     74% accuracy
+Logistic Regression:     74% accuracy
 ```
 
 ### Comprehensive Comparison
-| Architecture | Accuracy | Precision | Recall | F1-Score |
-|-------------|----------|-----------|--------|----------|
-| Random Forest | 72.50% | 0.73 | 0.72 | 0.72 |
-| **Logistic Regression** | **74.17%** | **0.75** | **0.74** | **0.74** |
-| Simple NN | 69.17% | 0.70 | 0.69 | 0.69 |
-| ResNet-1D | 78.5% | 0.79 | 0.78 | 0.78 |
-| Attention CNN | 82.3% | 0.82 | 0.82 | 0.82 |
-| Transformer | 80.1% | 0.81 | 0.80 | 0.80 |
-| **Ensemble** | **85.2%** | **0.85** | **0.85** | **0.85** |
+| Model | Accuracy | Precision | Recall | F1-Score |
+|-------|----------|-----------|--------|----------|
+| **Random Forest** | **79%** | **0.81** | **0.78** | **0.79** |
+| **SVM** | **76%** | **0.77** | **0.75** | **0.76** |
+| **KNN** | **74%** | **0.75** | **0.74** | **0.74** |
+| **Logistic Regression** | **74%** | **0.74** | **0.74** | **0.74** |
 
-### Training Curves & Visualizations
+### Visualizations
 All experiments generate comprehensive visualizations:
-- Training/validation accuracy curves
-- Loss evolution plots  
 - Confusion matrices
 - Feature importance analysis
-- Hyperparameter optimization history
+- Classification reports
+- Model comparison plots
 
 ## 🏗️ Architecture
 
 ### Project Structure
 ```
-MFCC_SER-Advanced/
+MFCC_SER-main/
 ├── 📁 dataset/                          # Audio datasets
 │   ├── ravdess-emotional-speech-audio/
 │   ├── cremad/
 │   ├── toronto-emotional-speech-set-tess/
 │   └── surrey-audiovisual-expressed-emotion-savee/
-├── 📁 models/                           # Saved models
-│   ├── best_attention_cnn.h5
-│   ├── optuna_best_emotion_model.h5
-│   └── ensemble_models/
+├── 📁 models/                           # Saved models (joblib format)
+│   ├── rf_model.pkl
+│   ├── svm_model.pkl
+│   ├── knn_model.pkl
+│   └── lr_model.pkl
 ├── 📁 results/                          # Experiment results
 │   ├── confusion_matrices/
-│   ├── training_curves/
 │   └── performance_reports/
-├── 📁 logs/                             # Training logs
 ├── 📄 requirements.txt                  # Dependencies
-├── 📄 RUN_EXPERIMENT.sh                 # Automated runner
-├── 📄 Speech Emotion Recognition.ipynb  # Original notebook
-├── 🐍 advanced_data_augmentation.py     # Data augmentation pipeline
-├── 🐍 optuna_hyperparameter_tuning.py  # Hyperparameter optimization
-├── 🐍 advanced_models.py               # Neural architectures
-├── 🐍 advanced_training_techniques.py  # Training optimization
-├── 🐍 baseline_comparison.py           # Model comparison
-├── 🐍 final_results_summary.py         # Results generation
+├── 📄 Speech_Emotion_Recognition_ML.ipynb  # ML-only notebook
+├── 🐍 baseline_comparison.py           # ML model comparison
+├── 🐍 pdf_analysis_and_visualization.py # Visualization utilities
+├── 🐍 setup.py                         # Package setup
 ├── 📄 EXECUTION_ORDER_GUIDE.md         # Detailed instructions
-├── 📄 IMPROVEMENT_REPORT.txt           # Generated results
+├── 📄 PROJECT_SUMMARY.md               # Project summary
 └── 📄 README.md                        # This file
 ```
 
@@ -331,67 +333,68 @@ MFCC_SER-Advanced/
 
 #### 1. **Data Processing Pipeline**
 - **Audio Loading**: Librosa-based loading with configurable parameters
-- **Feature Extraction**: 157 optimized features (MFCC, spectral, harmonic)
-- **Augmentation**: 10+ techniques for robust training data
+- **Feature Extraction**: 162 audio features (MFCC, ZCR, Chroma, RMS, Mel)
+- **Augmentation**: Simple noise injection and time stretching
 - **Preprocessing**: Scaling, encoding, train/test splitting
 
-#### 2. **Model Architectures**
+#### 2. **Machine Learning Models**
 ```python
-# Available architectures
-architectures = [
-    'resnet_1d',           # 1D ResNet with skip connections
-    'attention_cnn',       # CNN with multi-head attention  
-    'cnn_lstm_attention',  # Hybrid CNN-LSTM-Attention
-    'transformer',         # Transformer encoder
-    'inception_1d'         # 1D Inception network
-]
+# Available models (scikit-learn)
+models = {
+    'Random Forest': RandomForestClassifier(),
+    'SVM': SVC(kernel='rbf'),
+    'KNN': KNeighborsClassifier(n_neighbors=5),
+    'Logistic Regression': LogisticRegression(max_iter=1000)
+}
 ```
 
-#### 3. **Optimization Pipeline**
-- **Optuna Integration**: Advanced hyperparameter search
-- **Training Callbacks**: Early stopping, LR scheduling, checkpointing  
-- **Regularization**: Dropout, BatchNorm, Weight decay
-- **Ensemble Methods**: Stacking, averaging, cross-validation
-
-#### 4. **Evaluation Framework**
+#### 3. **Evaluation Framework**
 - **Metrics**: Accuracy, Precision, Recall, F1-score
-- **Visualizations**: Confusion matrices, ROC curves, training plots
-- **Statistical Analysis**: Cross-validation, significance testing
-- **Performance Monitoring**: Training logs, resource usage
+- **Visualizations**: Confusion matrices, classification reports
+- **Cross-validation**: K-fold validation for robust estimates
+- **Model Persistence**: Save/load models with joblib
 
 ## 📋 API Reference
 
-### Core Classes
+### Core Functions
 
-#### `AdvancedAudioAugmentation`
+#### Feature Extraction
 ```python
-augmenter = AdvancedAudioAugmentation(sample_rate=22050)
+import librosa
+import numpy as np
 
-# Available methods
-augmenter.add_noise(data, noise_factor=0.01)
-augmenter.time_stretch(data, stretch_rate=1.1) 
-augmenter.pitch_shift(data, n_steps=2)
-augmenter.add_reverb(data, reverb_factor=0.1)
+def extract_mfcc_features(audio_path):
+    y, sr = librosa.load(audio_path, sr=22050, duration=2.5, offset=0.6)
+    mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=20)
+    return np.mean(mfcc.T, axis=0)
 ```
 
-#### `OptunaHyperparameterTuner`
+#### Model Training
 ```python
-tuner = OptunaHyperparameterTuner("enhanced_features.csv")
-study = tuner.optimize(n_trials=30, timeout=3600)
-best_model = tuner.train_best_model(study.best_params)
+from sklearn.ensemble import RandomForestClassifier
+import joblib
+
+# Train model
+model = RandomForestClassifier(n_estimators=200, random_state=42)
+model.fit(X_train, y_train)
+
+# Save model
+joblib.dump(model, 'rf_model.pkl')
+
+# Load model
+loaded_model = joblib.load('rf_model.pkl')
 ```
 
-#### `AdvancedModelArchitectures`
+#### Model Evaluation
 ```python
-arch = AdvancedModelArchitectures(input_shape=(157, 1), num_classes=8)
-model = arch.create_resnet_1d(filters_list=[64, 128, 256])
-```
+from sklearn.metrics import classification_report, confusion_matrix
 
-#### `EnsembleModels`
-```python
-ensemble = EnsembleModels(input_shape=(157, 1), num_classes=8)
-models = ensemble.create_diverse_models()
-predictions = ensemble.weighted_average_ensemble(models, X_test)
+# Predictions
+y_pred = model.predict(X_test)
+
+# Metrics
+print(classification_report(y_test, y_pred))
+print(confusion_matrix(y_test, y_pred))
 ```
 
 ### Configuration Options
@@ -402,30 +405,29 @@ AUDIO_CONFIG = {
     'sample_rate': 22050,
     'duration': 2.5,
     'offset': 0.6,
-    'n_mfcc': 13,
+    'n_mfcc': 20,
     'n_fft': 2048,
     'hop_length': 512
 }
 ```
 
-#### Model Training  
+#### Model Configuration
 ```python
-TRAINING_CONFIG = {
-    'batch_size': 32,
-    'epochs': 100,
-    'learning_rate': 0.001,
-    'patience': 15,
-    'validation_split': 0.2
-}
-```
-
-#### Optimization
-```python
-OPTUNA_CONFIG = {
-    'n_trials': 50,
-    'timeout': 7200,  # 2 hours
-    'sampler': 'TPESampler',
-    'pruner': 'MedianPruner'
+MODEL_CONFIG = {
+    'random_forest': {
+        'n_estimators': 200,
+        'max_depth': 30,
+        'min_samples_split': 5
+    },
+    'svm': {
+        'kernel': 'rbf',
+        'C': 1.0,
+        'gamma': 'scale'
+    },
+    'knn': {
+        'n_neighbors': 5,
+        'weights': 'distance'
+    }
 }
 ```
 
@@ -435,20 +437,11 @@ OPTUNA_CONFIG = {
 
 #### 1. **Memory Errors**
 ```bash
-# Reduce batch size
-export TF_GPU_MEMORY_GROWTH=true
-# Edit scripts: batch_size=64 → batch_size=16
+# Reduce dataset size or process in batches
+# Traditional ML models use minimal memory
 ```
 
-#### 2. **CUDA/GPU Issues**
-```bash
-# Force CPU mode
-export CUDA_VISIBLE_DEVICES=""
-# Or install CPU-only TensorFlow
-pip install tensorflow-cpu
-```
-
-#### 3. **Dataset Loading Errors**
+#### 2. **Dataset Loading Errors**
 ```bash
 # Verify dataset structure
 python -c "import pandas as pd; print(pd.read_csv('data_path.csv').head())"
@@ -461,14 +454,13 @@ import pandas as pd
 "
 ```
 
-#### 4. **Package Conflicts**
+#### 3. **Package Conflicts**
 ```bash
 # Clean reinstall
-pip uninstall tensorflow keras
-pip install tensorflow==2.13.0 keras==2.13.1
+pip install --upgrade scikit-learn librosa pandas numpy
 ```
 
-#### 5. **Insufficient Disk Space**
+#### 4. **Insufficient Disk Space**
 ```bash
 # Clean temporary files
 rm -rf logs/*.log results/temp/
@@ -480,50 +472,50 @@ watch -n 5 'df -h .'
 
 #### For Large Datasets
 ```python
-# Use data generators instead of loading all data
-def data_generator(batch_size=32):
-    while True:
-        # Yield batches of data
-        yield X_batch, y_batch
+# Process data in batches
+from sklearn.model_selection import train_test_split
 
-# Enable mixed precision training
-from tensorflow.keras.mixed_precision import Policy
-policy = Policy('mixed_float16')
-tf.keras.mixed_precision.set_global_policy(policy)
+# Use partial_fit for incremental learning (if supported)
+# Or subsample for faster training
+X_sample = X[:10000]  # Use subset for testing
+y_sample = y[:10000]
 ```
 
 #### For Limited Resources
 ```python
-# Reduce model complexity
-model_config = {
-    'filters': [32, 64, 128],  # Instead of [256, 512, 1024]
-    'dense_units': 32,         # Instead of 128
-    'dropout_rate': 0.5        # Higher dropout for regularization
-}
+# Reduce feature dimensions
+from sklearn.decomposition import PCA
+
+pca = PCA(n_components=50)  # Reduce from 162 to 50 features
+X_reduced = pca.fit_transform(X_train)
 ```
 
 ## 📊 Monitoring & Logging
 
 ### Training Progress
 ```bash
-# Monitor training in real-time
-tail -f logs/training.log
-
-# Watch model checkpoints
-watch -n 10 'ls -lth *.h5 | head -5'
+# Monitor model files
+watch -n 10 'ls -lth *.pkl | head -5'
 
 # System resources
-htop  # or nvidia-smi for GPU
+htop
 ```
 
 ### Experiment Tracking
 ```python
-# All experiments automatically log:
-# - Training/validation metrics
-# - Model architectures
-# - Hyperparameter configurations  
-# - Performance comparisons
-# - Resource usage statistics
+# Track experiment results
+import json
+
+results = {
+    'model': 'Random Forest',
+    'accuracy': 0.79,
+    'timestamp': '2025-10-01',
+    'parameters': {'n_estimators': 200}
+}
+
+with open('experiment_log.json', 'a') as f:
+    json.dump(results, f)
+    f.write('\n')
 ```
 
 ## 🤝 Contributing
@@ -548,7 +540,7 @@ black . --line-length=88
 
 ### Areas for Contribution
 - 🆕 Additional audio augmentation techniques
-- 🏗️ New neural network architectures  
+- 🏗️ New traditional ML algorithms
 - 📊 Advanced evaluation metrics
 - 🗃️ Support for more datasets
 - ⚡ Performance optimizations
@@ -568,11 +560,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **SAVEE**: Surrey Audio-Visual Expressed Emotion Database
 
 ### Libraries & Frameworks
-- **TensorFlow/Keras**: Deep learning framework
+- **Scikit-learn**: Machine learning algorithms and utilities
 - **Librosa**: Audio processing and feature extraction
-- **Optuna**: Hyperparameter optimization
-- **Scikit-learn**: Machine learning utilities
 - **NumPy/Pandas**: Data manipulation and analysis
+- **Matplotlib/Seaborn**: Data visualization
 
 ### Research References
 ```bibtex
@@ -601,21 +592,19 @@ Before running the experiment, make sure you have:
 - [ ] **Dataset downloaded** and placed in correct structure
 - [ ] **Virtual environment** created and activated
 - [ ] **All dependencies** installed (`pip install -r requirements.txt`)
-- [ ] **GPU drivers** installed (if using GPU)
-- [ ] **Sufficient time** allocated (12-16 hours for full experiment)
+- [ ] **Sufficient time** allocated (30-60 minutes for full experiment)
 
 ### Quick Verification
 ```bash
 # Verify setup
 python -c "
-import tensorflow as tf
-import librosa  
-import optuna
+import sklearn
+import librosa
 import pandas as pd
 import numpy as np
 print('✅ All core packages working')
-print(f'TensorFlow: {tf.__version__}')
-print(f'GPU Available: {tf.config.list_physical_devices(\"GPU\")}')
+print(f'scikit-learn: {sklearn.__version__}')
+print(f'librosa: {librosa.__version__}')
 "
 
 # Check dataset
@@ -632,22 +621,14 @@ print(f'❌ Missing datasets: {[d for d in datasets if d not in found]}')
 
 ## 🎯 Ready to Start?
 
-### Quick Start (30 minutes test)
+### Quick Start (Jupyter Notebook)
 ```bash
-python quick_test.py
+jupyter notebook Speech_Emotion_Recognition_ML.ipynb
 ```
 
-### Full Experiment (12-16 hours)
+### Run ML Comparison (5-10 minutes)
 ```bash
-./RUN_EXPERIMENT.sh
-```
-
-### Manual Step-by-Step
-```bash
-python advanced_data_augmentation.py      # 2-4 hours
-python optuna_hyperparameter_tuning.py   # 2-3 hours  
-python advanced_models.py                 # 4-6 hours
-python final_results_summary.py           # Generate report
+python baseline_comparison.py
 ```
 
 ---
