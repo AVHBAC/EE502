@@ -9,21 +9,43 @@ This repository accompanies the EE502 course textbook and provides hands-on impl
 ## 📖 Complete Course Materials
 
 ### 📄 **Course Textbook**
-**[📖 EE502_BOOK_Sep20_version.pdf](./EE502_BOOK_Sep20_version.pdf)** - Complete course textbook covering all theoretical foundations and practical applications.
+**[📖 EE502_Draft_Booklet_Oct2nd_version.pdf](./EE502_Draft_Booklet_Oct2nd_version.pdf)** - Complete course textbook covering all theoretical foundations and practical applications.
 
 *Click the link above to view the PDF directly on GitHub, or download it for offline reading.*
 
-### 🎯 **Class Examples**
-All practical implementations and code examples are organized in the **[class_examples/](./class_examples/)** directory:
+### 🎓 **Interactive Teaching Notebooks**
+The **[class_examples/](./class_examples/)** directory contains three comprehensive Jupyter notebooks designed for classroom teaching using the Mini Speech Commands dataset:
+
+| Notebook | Topic | Description | Key Concepts |
+|----------|-------|-------------|--------------|
+| **[Audio_DT_RF_MiniSpeechCommands.ipynb](./class_examples/Audio_DT_RF_MiniSpeechCommands%20(1).ipynb)** | Decision Trees & Random Forests | Complete ML pipeline for audio classification with 10 spoken commands | `MFCC`, `Decision Trees`, `Random Forest`, `GridSearchCV`, `ROC`, `Feature Importance` |
+| **[Audio_Regression_MiniSpeechCommands.ipynb](./class_examples/Audio_Regression_MiniSpeechCommands%20(1).ipynb)** | Audio Regression Analysis | Predict continuous targets (loudness proxy) from audio features | `Linear Regression`, `Ridge`, `Random Forest Regressor`, `k-NN`, `Residual Analysis` |
+| **[EE502_LDA_QDA_PCA_MiniSpeech.ipynb](./class_examples/EE502_LDA_QDA_PCA_MiniSpeech.ipynb)** | Dimensionality Reduction & Classification | Advanced dimensionality reduction and discriminant analysis techniques | `LDA`, `QDA`, `PCA`, `Feature Reduction`, `Statistical Classification` |
+
+### 📚 **Book Scripts - Chapter Implementations**
+The **[Book_Scripts/](./Book_Scripts/)** directory contains complete chapter implementations corresponding to the textbook:
 
 | Chapter | Topic | Description | Key Technologies |
 |---------|-------|-------------|------------------|
-| **[Chapter 4](./class_examples/chapter_04_audio_classification_mfcc_decision_trees/)** | Audio Classification Using MFCC and Decision Tree Models | Classify spoken digits (0-9) using MFCC features and machine learning | `MFCC`, `Random Forest`, `SVM`, `PCA` |
-| **[Chapter 5](./class_examples/chapter_05_keyword_detection_random_forest/)** | Key-Word Detection using Random Forest | Detect keywords ("let", "go", "hold", "general") with 60%+ accuracy | `Random Forest`, `Feature Engineering`, `Data Augmentation` |
-| **[Chapter 6](./class_examples/chapter_06_svm_speaker_classification/)** | SVM-based Speaker Classification | Speaker identification using Support Vector Machines | `SVM`, `Speaker Recognition`, `Performance Analysis` |
-| **[Chapter 7](./class_examples/chapter_07_speech_emotion_recognition/)** | Model Comparisons for Speech Emotion Recognition | Advanced emotion recognition achieving 85%+ accuracy | `Neural Networks`, `MFCC`, `Ensemble Methods`, `Optuna` |
-| **[Chapter 8](./class_examples/chapter_08_deepfake_detection_ml/)** | Deepfake Detection using ML | Detect AI-generated vs. real speech using machine learning | `Deepfake Detection`, `Audio Authentication`, `MFCC Analysis` |
-| **[Chapter 9](./class_examples/chapter_09_voice_gender_identification/)** | Voice Based Gender Identification | Gender classification from voice characteristics | `Gender Recognition`, `Voice Analysis`, `Classification` |
+| **[Chapter 4](./Book_Scripts/Chapter4_Audio_Classification_Using_MFCCs_and_Decision_Tree_Models/)** | Audio Classification Using MFCCs and Decision Tree Models | Classify spoken digits using MFCC features and ML classifiers | `MFCC`, `Random Forest`, `SVM`, `PCA` |
+| **[Chapter 5](./Book_Scripts/Chapter5_Key-Word_Detection_using_Random_Forest/)** | Key-Word Detection using Random Forest | Keyword detection with advanced feature engineering | `Random Forest`, `Feature Engineering`, `Data Augmentation` |
+| **[Chapter 6](./Book_Scripts/Chapter6_SVM-based_Speaker_Classification/)** | SVM-based Speaker Classification | Speaker identification using Support Vector Machines | `SVM`, `Speaker Recognition`, `Performance Analysis` |
+| **[Chapter 7](./Book_Scripts/Chapter7_Speech_Emotion_Recognition_using_MFCC_and_Machine_Learning/)** | Speech Emotion Recognition using MFCC and ML | Emotion recognition achieving 85%+ accuracy | `MFCC`, `Neural Networks`, `Ensemble Methods`, `Optuna` |
+| **[Chapter 8](./Book_Scripts/Chapter8_Voice-based_Gender_Identification/)** | Voice-based Gender Identification | Gender classification from voice characteristics | `Gender Recognition`, `Voice Analysis`, `Classification` |
+| **[Chapter 9](./Book_Scripts/Chapter9_Deepfake_Audio_Detection_via_MFCC_Features_Using_Machine_Learning/)** | Deepfake Audio Detection via MFCC Features | Detect AI-generated vs. real speech using machine learning | `Deepfake Detection`, `Audio Authentication`, `MFCC Analysis` |
+
+### 🔬 **Research Project: Text-Independent Speaker Verification**
+**[text_independant_Spkr_vrf_old_chapter5/](./text_independant_Spkr_vrf_old_chapter5/)** - Advanced speaker verification research project comparing HMM and SVM approaches for biometric authentication.
+
+**Paper Reference**: Investigation of Text-independent speaker verification by SVM-based ML approaches submitted to MDPI - Electronics, December 2024
+
+**Key Features:**
+- Hidden Markov Models (HMM) with Gaussian emissions
+- Support Vector Machines (SVM) with RBF kernel
+- Convolutional Neural Networks (CNN) for comparison
+- Comprehensive MFCC feature extraction with PCA
+- ROC analysis, EER metrics, and statistical validation
+- Performance: SVM achieves 91.23% accuracy vs HMM 82.34%
 
 ## 🚀 Getting Started
 
@@ -32,87 +54,162 @@ All practical implementations and code examples are organized in the **[class_ex
 ```bash
 # Python 3.8+ required
 pip install numpy pandas matplotlib scikit-learn librosa tensorflow
-pip install soundfile scipy seaborn jupyter notebook
+pip install soundfile scipy seaborn jupyter notebook hmmlearn tqdm
 ```
 
 ### Quick Start Guide
 
+**Option 1: Interactive Teaching Notebooks (Recommended for Beginners)**
 1. **Clone the repository:**
 ```bash
 git clone https://github.com/AVHBAC/EE502.git
 cd EE502
 ```
 
-2. **Read the textbook:**
-   - Open [EE502_BOOK_Sep20_version.pdf](./EE502_BOOK_Sep20_version.pdf) for theoretical background
-
-3. **Explore class examples:**
+2. **Start with classroom notebooks:**
 ```bash
 cd class_examples/
-ls  # Browse available chapters
+jupyter notebook
+# Open Audio_DT_RF_MiniSpeechCommands (1).ipynb
 ```
 
-4. **Run a specific chapter:**
+**Option 2: Complete Chapter Implementations**
+1. **Explore book chapters:**
 ```bash
-cd chapter_04_audio_classification_mfcc_decision_trees/
+cd Book_Scripts/
+ls  # Browse available chapters (Chapter4-9)
+```
+
+2. **Run a specific chapter:**
+```bash
+cd Chapter4_Audio_Classification_Using_MFCCs_and_Decision_Tree_Models/
+cd Audio-Classification-Using-MFCCs-and-Decision-Tree-Models/
 # Follow the chapter's README for specific instructions
+```
+
+**Option 3: Research Project**
+```bash
+cd text_independant_Spkr_vrf_old_chapter5/
+cd Text_Independent_Speaker_Verification_using_HMM_SVM/
+# See README.md for detailed setup and usage
 ```
 
 ## 🏗️ Repository Structure
 
 ```
 EE502/
-├── 📄 README.md                           # This file
-├── 📖 EE502_BOOK_Sep20_version.pdf        # Complete course textbook
-├── 📁 class_examples/                     # All practical implementations
-│   ├── 📁 chapter_04_audio_classification_mfcc_decision_trees/
-│   ├── 📁 chapter_05_keyword_detection_random_forest/
-│   ├── 📁 chapter_06_svm_speaker_classification/
-│   ├── 📁 chapter_07_speech_emotion_recognition/
-│   ├── 📁 chapter_08_deepfake_detection_ml/
-│   └── 📁 chapter_09_voice_gender_identification/
-└── 📄 .gitignore                          # Git ignore rules
+├── 📄 README.md                                    # This file
+├── 📖 EE502_Draft_Booklet_Oct2nd_version.pdf       # Complete course textbook
+│
+├── 📁 class_examples/                              # Interactive teaching notebooks
+│   ├── 📓 Audio_DT_RF_MiniSpeechCommands (1).ipynb
+│   ├── 📓 Audio_Regression_MiniSpeechCommands (1).ipynb
+│   └── 📓 EE502_LDA_QDA_PCA_MiniSpeech.ipynb
+│
+├── 📁 Book_Scripts/                                # Complete chapter implementations
+│   ├── 📁 Chapter4_Audio_Classification_Using_MFCCs_and_Decision_Tree_Models/
+│   │   └── Audio-Classification-Using-MFCCs-and-Decision-Tree-Models/
+│   ├── 📁 Chapter5_Key-Word_Detection_using_Random_Forest/
+│   │   └── Key-Word-Detection-using-Random-Forest/
+│   ├── 📁 Chapter6_SVM-based_Speaker_Classification/
+│   │   └── SVM_Speaker_Classification/
+│   ├── 📁 Chapter7_Speech_Emotion_Recognition_using_MFCC_and_Machine_Learning/
+│   │   └── MFCC_SER-main/
+│   ├── 📁 Chapter8_Voice-based_Gender_Identification/
+│   │   └── voice_based_gender_identification/
+│   └── 📁 Chapter9_Deepfake_Audio_Detection_via_MFCC_Features_Using_Machine_Learning/
+│       └── DeepFake-Audio-Detection-MFCC-main/
+│
+└── 📁 text_independant_Spkr_vrf_old_chapter5/      # Research project
+    └── Text_Independent_Speaker_Verification_using_HMM_SVM/
+        ├── 📄 README.md                            # Detailed project documentation
+        ├── 📄 enviroment.yml                       # Conda environment setup
+        ├── 📁 code/final_v3/                       # Implementation code
+        │   ├── 📁 feature_code/                    # Feature extraction
+        │   ├── 📓 evaluate_HMM.ipynb              # HMM evaluation
+        │   ├── 📓 evaluate_SVM.ipynb              # SVM evaluation
+        │   └── 📓 cnn_testing.ipynb               # CNN comparison
+        └── 📁 data/extracted_features_v2/          # Pre-extracted features
 ```
 
 ## 🎯 Learning Path
 
-### 🌟 **Beginner Track**
-Start here if you're new to audio signal processing:
+### 🌟 **Beginner Track: Start with Interactive Notebooks**
+Perfect for classroom teaching and hands-on learning:
 
-1. **Chapter 4**: Audio Classification - Learn MFCC basics and classification
-2. **Chapter 5**: Keyword Detection - Understand feature engineering and Random Forest
-3. **Chapter 6**: Speaker Classification - Master SVM and performance analysis
+1. **Audio_DT_RF_MiniSpeechCommands.ipynb** - Learn audio classification fundamentals with Decision Trees and Random Forests
+   - Download Mini Speech Commands dataset automatically
+   - Extract MFCC and spectral features
+   - Train and compare classifiers with GridSearchCV
+   - Visualize results with confusion matrices and ROC curves
 
-### 🚀 **Advanced Track**
-For those with ML experience:
+2. **Audio_Regression_MiniSpeechCommands.ipynb** - Master regression techniques for audio
+   - Predict continuous targets from audio features
+   - Compare Linear, Ridge, Random Forest, and k-NN regressors
+   - Analyze residuals and model performance
 
-1. **Chapter 7**: Speech Emotion Recognition - Neural networks and advanced optimization
-2. **Chapter 8**: Deepfake Detection - Modern audio authentication techniques
-3. **Chapter 9**: Gender Identification - Comprehensive voice analysis
+3. **EE502_LDA_QDA_PCA_MiniSpeech.ipynb** - Advanced dimensionality reduction
+   - Apply PCA for feature reduction
+   - Implement LDA and QDA for classification
+   - Compare discriminant analysis techniques
+
+### 📚 **Intermediate Track: Book Chapter Implementations**
+Deep dive into textbook chapters with complete implementations:
+
+1. **Chapter 4**: Audio Classification Using MFCCs - Spoken digit recognition
+2. **Chapter 5**: Keyword Detection - Advanced feature engineering with Random Forest
+3. **Chapter 6**: Speaker Classification - SVM-based speaker identification
+
+### 🚀 **Advanced Track: Cutting-Edge Applications**
+State-of-the-art audio processing techniques:
+
+1. **Chapter 7**: Speech Emotion Recognition - Neural networks with Optuna optimization
+2. **Chapter 8**: Voice-based Gender Identification - Gender classification from voice
+3. **Chapter 9**: Deepfake Audio Detection - AI-generated speech detection
+
+### 🔬 **Research Track: Speaker Verification**
+For advanced students and researchers:
+
+- **Text-Independent Speaker Verification** - Compare HMM, SVM, and CNN approaches for biometric authentication with comprehensive evaluation metrics and statistical validation
 
 ## 🛠️ Core Technologies Used
 
-| Technology | Purpose | Chapters |
-|------------|---------|----------|
-| **MFCC (Mel-Frequency Cepstral Coefficients)** | Primary audio feature extraction | 4, 5, 6, 7, 8 |
-| **scikit-learn** | Machine learning algorithms | 4, 5, 6, 7, 8, 9 |
-| **TensorFlow/Keras** | Deep learning models | 7 |
-| **librosa** | Audio processing and analysis | All |
-| **Random Forest** | Classification algorithm | 4, 5 |
-| **Support Vector Machines** | Classification and speaker ID | 4, 6 |
-| **Neural Networks** | Advanced emotion recognition | 7 |
-| **Optuna** | Hyperparameter optimization | 7 |
+| Technology | Purpose | Where Used |
+|------------|---------|------------|
+| **MFCC (Mel-Frequency Cepstral Coefficients)** | Primary audio feature extraction | All chapters, notebooks, research |
+| **librosa** | Audio processing and analysis | All implementations |
+| **scikit-learn** | ML algorithms (RF, SVM, Linear models) | All chapters and notebooks |
+| **Random Forest** | Classification and regression | Ch 4, 5, 7 + teaching notebooks |
+| **Support Vector Machines (SVM)** | Classification and speaker verification | Ch 4, 6 + research project |
+| **Decision Trees** | Classification and regression | Ch 4 + teaching notebooks |
+| **Hidden Markov Models (HMM)** | Speaker verification | Research project |
+| **Neural Networks / Deep Learning** | Advanced emotion recognition | Ch 7 + research project (CNN) |
+| **TensorFlow/Keras/PyTorch** | Deep learning frameworks | Ch 7, research project |
+| **Optuna** | Hyperparameter optimization | Ch 7 |
+| **PCA** | Dimensionality reduction | Ch 4, research project, notebooks |
+| **LDA/QDA** | Discriminant analysis | Teaching notebooks |
+| **GridSearchCV** | Model hyperparameter tuning | Teaching notebooks, chapters |
+| **hmmlearn** | HMM implementation | Research project |
 
 ## 📊 Performance Highlights
 
-Each chapter includes detailed performance analysis and results:
+### Teaching Notebooks
+- **Audio Classification**: High accuracy on 10-command speech recognition with automatic dataset download
+- **Regression Analysis**: Comprehensive comparison of Linear, Ridge, RF, and k-NN regressors
+- **Dimensionality Reduction**: Effective feature reduction with PCA, LDA, and QDA
 
-- **Chapter 4**: 100% accuracy on spoken digit classification
-- **Chapter 5**: 60%+ accuracy on keyword detection with class balancing
-- **Chapter 6**: Comprehensive speaker classification with performance scaling analysis
-- **Chapter 7**: 85%+ accuracy on emotion recognition using ensemble methods
-- **Chapter 8**: Effective deepfake detection using ML techniques
-- **Chapter 9**: Robust gender identification from voice characteristics
+### Book Chapters
+- **Chapter 4**: High accuracy on spoken digit classification using MFCC + ML
+- **Chapter 5**: 60%+ accuracy on keyword detection with advanced feature engineering
+- **Chapter 6**: Robust speaker identification with comprehensive performance analysis
+- **Chapter 7**: 85%+ accuracy on speech emotion recognition with neural networks
+- **Chapter 8**: Accurate gender identification from voice characteristics
+- **Chapter 9**: Effective deepfake audio detection using MFCC features
+
+### Research Project
+- **Speaker Verification**: SVM achieves 91.23% accuracy vs HMM 82.34%
+- Comprehensive evaluation with ROC curves, EER, and statistical validation
+- Paper submitted to MDPI - Electronics, December 2024
 
 ## 🎓 Educational Value
 
@@ -124,49 +221,108 @@ This repository is perfect for:
 - **Data Scientists** working with audio data
 - **Anyone** interested in the intersection of signal processing and AI
 
-## 📖 Chapter Deep Dive
+## 📖 Deep Dive: Notebooks and Chapters
 
-### Chapter 4: Audio Classification Using MFCC and Decision Trees
-Learn fundamental concepts of audio classification by building a system that can recognize spoken digits. This chapter covers:
-- MFCC feature extraction
+### 🎓 Teaching Notebooks (class_examples/)
+
+#### Audio_DT_RF_MiniSpeechCommands.ipynb
+A complete, production-ready notebook for teaching audio classification:
+- **Automatic dataset download**: Mini Speech Commands (10 classes: down, go, left, no, off, on, right, stop, up, yes)
+- **Rich feature extraction**: 40 MFCCs + deltas, spectral features, chroma, ZCR, RMS (170+ features)
+- **Comprehensive ML pipeline**: Train/test split, stratified k-fold CV, GridSearchCV
+- **Model comparison**: Decision Trees vs Random Forests with hyperparameter tuning
+- **Advanced visualizations**: Confusion matrices, ROC curves, learning curves, feature importance
+- **Bonus regression**: Predict F0 (pitch) from audio features
+- **Classroom-ready**: Adjustable parameters for quick demos or deep learning
+
+#### Audio_Regression_MiniSpeechCommands.ipynb
+Focused regression tutorial on audio data:
+- **54-dimensional feature vectors**: MFCCs, chroma, ZCR, RMS with statistics
+- **Multiple regressors**: Linear, Ridge, Random Forest, k-NN comparison
+- **Synthetic target**: Loudness proxy (√RMS × 10) for demonstration
+- **Complete evaluation**: MAE, MSE, RMSE, R² metrics
+- **Professional visualizations**: Predicted vs actual, residual plots, error distributions
+- **Export-ready results**: CSV output and styled comparison tables
+
+#### EE502_LDA_QDA_PCA_MiniSpeech.ipynb
+Advanced dimensionality reduction and discriminant analysis:
+- **PCA**: Principal Component Analysis for feature reduction
+- **LDA**: Linear Discriminant Analysis for classification
+- **QDA**: Quadratic Discriminant Analysis for non-linear decision boundaries
+- **Comparative analysis**: Performance evaluation across techniques
+- **Visualization**: Decision boundaries and feature space reduction
+
+### 📚 Book Chapter Implementations (Book_Scripts/)
+
+#### Chapter 4: Audio Classification Using MFCCs and Decision Trees
+Fundamental audio classification with spoken digit recognition:
+- MFCC feature extraction from audio signals
 - Random Forest and SVM classifiers
-- Principal Component Analysis (PCA)
-- Model evaluation and comparison
+- Principal Component Analysis (PCA) for dimensionality reduction
+- Model evaluation and performance comparison
 
-### Chapter 5: Key-Word Detection using Random Forest
-Build a practical keyword detection system with advanced feature engineering:
-- 240+ audio features with intelligent selection
-- Data augmentation for class balancing
+#### Chapter 5: Key-Word Detection using Random Forest
+Advanced keyword detection with sophisticated feature engineering:
+- 240+ audio features with intelligent feature selection
+- Data augmentation techniques for class balancing
 - Ensemble methods for robust performance
 - Systematic model improvement pipeline
 
-### Chapter 6: SVM-based Speaker Classification
-Master speaker identification techniques with comprehensive analysis:
+#### Chapter 6: SVM-based Speaker Classification
+Comprehensive speaker identification system:
 - Speaker recognition using unique voice characteristics
-- Performance scaling with dataset size
+- Performance scaling analysis with varying dataset sizes
 - Detailed confusion matrix analysis
-- Cross-validation and overfitting detection
+- Cross-validation and overfitting detection strategies
 
-### Chapter 7: Speech Emotion Recognition
-Implement state-of-the-art emotion recognition systems:
-- Multi-dataset support (RAVDESS, CREMA-D, TESS, SAVEE)
-- Advanced neural architectures (ResNet-1D, Attention, Transformers)
+#### Chapter 7: Speech Emotion Recognition using MFCC and Machine Learning
+State-of-the-art emotion recognition (85%+ accuracy):
+- Multi-dataset support: RAVDESS, CREMA-D, TESS, SAVEE
+- Advanced neural architectures: ResNet-1D, Attention mechanisms
 - Hyperparameter optimization with Optuna
 - Data augmentation and ensemble methods
 
-### Chapter 8: Deepfake Detection using ML
-Explore modern audio authentication techniques:
+#### Chapter 8: Voice-based Gender Identification
+Gender classification from voice characteristics:
+- Voice characteristic analysis and feature extraction
+- Gender-specific acoustic features
+- Classification model development and tuning
+- Performance evaluation and optimization
+
+#### Chapter 9: Deepfake Audio Detection via MFCC Features
+Modern audio authentication and deepfake detection:
 - Real vs. AI-generated speech detection
 - MFCC-based deepfake analysis
 - Machine learning for audio authentication
 - Practical security applications
 
-### Chapter 9: Voice Based Gender Identification
-Comprehensive gender classification from voice:
-- Voice characteristic analysis
-- Gender-specific feature extraction
-- Classification model development
-- Performance evaluation and optimization
+### 🔬 Research Project: Text-Independent Speaker Verification
+
+Advanced biometric speaker verification comparing three approaches:
+
+**Hidden Markov Models (HMM)**:
+- Gaussian HMM with diagonal covariance matrices
+- 5 hidden states, 1000 training iterations
+- Threshold-based binary classification
+- Achieves 82.34% accuracy
+
+**Support Vector Machines (SVM)**:
+- RBF kernel with comprehensive hyperparameter tuning
+- C=1.0, gamma='scale', 5-fold cross-validation
+- **Best performance: 91.23% accuracy**
+- Fastest training time (1-2 minutes)
+
+**Convolutional Neural Networks (CNN)**:
+- Deep learning baseline for comparison
+- Multiple convolutional layers with dropout
+- Achieves 89.45% accuracy
+- Requires GPU for efficient training (30-60 minutes)
+
+**Features**:
+- MFCC-based: 13 or 20 coefficients with statistical measures
+- PCA dimensionality reduction significantly improves performance
+- LibriSpeech dataset with 100 speakers, 1000 segments each
+- Comprehensive evaluation: Accuracy, Precision, Recall, F1, ROC AUC, EER
 
 ## 🤝 Contributing
 
@@ -206,25 +362,43 @@ This repository is for educational purposes. Please respect licensing terms of i
 ### Course Development
 - **Dr. Imtiaz** - Course instructor and content development
 - **Course contributors** - Implementation and testing
+- **Research team** - Speaker verification project and paper submission
 
 ### Datasets and Libraries
+- **Mini Speech Commands** - Google's open-access speech dataset for teaching
+- **LibriSpeech** - Large-scale corpus for speaker verification research
 - **RAVDESS, CREMA-D, TESS, SAVEE** - Emotion recognition datasets
 - **Free Spoken Digit Dataset** - Digit classification data
 - **LibROSA** - Audio processing library
 - **scikit-learn** - Machine learning framework
-- **TensorFlow** - Deep learning platform
+- **TensorFlow/PyTorch** - Deep learning platforms
+- **hmmlearn** - Hidden Markov Model implementation
+
+### Special Thanks
+- Open-source community for audio processing tools
+- Students and researchers who contributed feedback and improvements
+- Academic institutions supporting audio ML research
 
 ---
 
 ## 📈 Repository Statistics
 
-![Repository Views](https://img.shields.io/badge/Repository-EE502-blue)
-![Chapters](https://img.shields.io/badge/Chapters-6-green)
-![Technologies](https://img.shields.io/badge/Technologies-10+-orange)
-![Performance](https://img.shields.io/badge/Best%20Accuracy-85%25+-red)
+![Repository](https://img.shields.io/badge/Repository-EE502-blue)
+![Book Chapters](https://img.shields.io/badge/Book%20Chapters-6-green)
+![Teaching Notebooks](https://img.shields.io/badge/Teaching%20Notebooks-3-brightgreen)
+![Research Projects](https://img.shields.io/badge/Research%20Projects-1-purple)
+![Technologies](https://img.shields.io/badge/Technologies-14+-orange)
+![Performance](https://img.shields.io/badge/Best%20Accuracy-91.23%25-red)
 
 ---
 
-**🎉 Ready to start learning?** Begin with [Chapter 4](./class_examples/chapter_04_audio_classification_mfcc_decision_trees/) or dive into the [complete textbook](./EE502_BOOK_Sep20_version.pdf)!
+## 🎯 Quick Links
+
+- 📖 **Textbook**: [EE502_Draft_Booklet_Oct2nd_version.pdf](./EE502_Draft_Booklet_Oct2nd_version.pdf)
+- 🎓 **Start Learning**: [Audio_DT_RF_MiniSpeechCommands.ipynb](./class_examples/Audio_DT_RF_MiniSpeechCommands%20(1).ipynb)
+- 📚 **Book Chapters**: [Book_Scripts/](./Book_Scripts/)
+- 🔬 **Research**: [Speaker Verification Project](./text_independant_Spkr_vrf_old_chapter5/Text_Independent_Speaker_Verification_using_HMM_SVM/)
+
+**🎉 Ready to start learning?** Begin with the [interactive teaching notebooks](./class_examples/) or dive into [complete chapter implementations](./Book_Scripts/)!
 
 **⭐ Star this repository** if you find it helpful for your audio signal processing and machine learning journey!
