@@ -107,30 +107,18 @@ EE502/
 │   └── 📓 EE502_LDA_QDA_PCA_MiniSpeech.ipynb
 │
 ├── 📁 Book_Scripts/                                # Complete chapter implementations
-│   ├── 📁 Chapter4_Audio_Classification_Using_MFCCs_and_Decision_Tree_Models/
-│   │   └── Audio-Classification-Using-MFCCs-and-Decision-Tree-Models/
-│   ├── 📁 Chapter5_Key-Word_Detection_using_Random_Forest/
-│   │   └── Key-Word-Detection-using-Random-Forest/
-│   ├── 📁 Chapter6_SVM-based_Speaker_Classification/
-│   │   └── SVM_Speaker_Classification/
-│   ├── 📁 Chapter7_Speech_Emotion_Recognition_using_MFCC_and_Machine_Learning/
-│   │   └── MFCC_SER-main/
-│   ├── 📁 Chapter8_Voice-based_Gender_Identification/
-│   │   └── voice_based_gender_identification/
-│   └── 📁 Chapter9_Deepfake_Audio_Detection_via_MFCC_Features_Using_Machine_Learning/
-│       └── DeepFake-Audio-Detection-MFCC-main/
-│
-└── 📁 text_independant_Spkr_vrf_old_chapter5/      # Research project
-    └── Text_Independent_Speaker_Verification_using_HMM_SVM/
-        ├── 📄 README.md                            # Detailed project documentation
-        ├── 📄 enviroment.yml                       # Conda environment setup
-        ├── 📁 code/final_v3/                       # Implementation code
-        │   ├── 📁 feature_code/                    # Feature extraction
-        │   ├── 📓 evaluate_HMM.ipynb              # HMM evaluation
-        │   ├── 📓 evaluate_SVM.ipynb              # SVM evaluation
-        │   └── 📓 cnn_testing.ipynb               # CNN comparison
-        └── 📁 data/extracted_features_v2/          # Pre-extracted features
-```
+   ├── 📁 Chapter4_Audio_Classification_Using_MFCCs_and_Decision_Tree_Models/
+   │   └── Audio-Classification-Using-MFCCs-and-Decision-Tree-Models/
+   ├── 📁 Chapter5_Key-Word_Detection_using_Random_Forest/
+   │   └── Key-Word-Detection-using-Random-Forest/
+   ├── 📁 Chapter6_SVM-based_Speaker_Classification/
+   │   └── SVM_Speaker_Classification/
+   ├── 📁 Chapter7_Speech_Emotion_Recognition_using_MFCC_and_Machine_Learning/
+   │   └── MFCC_SER-main/
+   ├── 📁 Chapter8_Voice-based_Gender_Identification/
+   │   └── voice_based_gender_identification/
+   └── 📁 Chapter9_Deepfake_Audio_Detection_via_MFCC_Features_Using_Machine_Learning/
+       └── DeepFake-Audio-Detection-MFCC-main/
 
 ## 🎯 Learning Path
 
@@ -296,34 +284,6 @@ Modern audio authentication and deepfake detection:
 - Machine learning for audio authentication
 - Practical security applications
 
-### 🔬 Research Project: Text-Independent Speaker Verification
-
-Advanced biometric speaker verification comparing three approaches:
-
-**Hidden Markov Models (HMM)**:
-- Gaussian HMM with diagonal covariance matrices
-- 5 hidden states, 1000 training iterations
-- Threshold-based binary classification
-- Achieves 82.34% accuracy
-
-**Support Vector Machines (SVM)**:
-- RBF kernel with comprehensive hyperparameter tuning
-- C=1.0, gamma='scale', 5-fold cross-validation
-- **Best performance: 91.23% accuracy**
-- Fastest training time (1-2 minutes)
-
-**Convolutional Neural Networks (CNN)**:
-- Deep learning baseline for comparison
-- Multiple convolutional layers with dropout
-- Achieves 89.45% accuracy
-- Requires GPU for efficient training (30-60 minutes)
-
-**Features**:
-- MFCC-based: 13 or 20 coefficients with statistical measures
-- PCA dimensionality reduction significantly improves performance
-- LibriSpeech dataset with 100 speakers, 1000 segments each
-- Comprehensive evaluation: Accuracy, Precision, Recall, F1, ROC AUC, EER
-
 ## 🤝 Contributing
 
 We welcome contributions to improve the repository:
@@ -400,5 +360,6 @@ This repository is for educational purposes. Please respect licensing terms of i
 - 🔬 **Research**: [Speaker Verification Project](./text_independant_Spkr_vrf_old_chapter5/Text_Independent_Speaker_Verification_using_HMM_SVM/)
 
 **🎉 Ready to start learning?** Begin with the [interactive teaching notebooks](./class_examples/) or dive into [complete chapter implementations](./Book_Scripts/)!
+
 
 **⭐ Star this repository** if you find it helpful for your audio signal processing and machine learning journey!
